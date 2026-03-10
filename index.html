@@ -649,7 +649,7 @@ const revObserver=new IntersectionObserver(entries=>{
     }
   });
 },revOpts);
-document.querySelectorAll('.sr,.sr-left,.sr-right .hero-right').forEach(el=>revObserver.observe(el));
+document.querySelectorAll('.sr,.sr-left,.sr-right').forEach(el=>revObserver.observe(el));
 
 /* ── Counting numbers ── */
 const cObs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){const el=e.target,t=+el.dataset.count;let n=0;const s=Math.ceil(t/50),tm=setInterval(()=>{n=Math.min(n+s,t);el.textContent=n;if(n>=t)clearInterval(tm)},28);cObs.unobserve(el)}})},{threshold:.5});
