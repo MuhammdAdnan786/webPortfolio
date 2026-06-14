@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://adnan-websiteportfolio.netlify.app/sitemap.xml
